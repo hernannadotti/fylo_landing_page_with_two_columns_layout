@@ -1,0 +1,203 @@
+body {
+    background-color: white;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+}
+
+.dark-blue-text-color {
+    color: hsl(243, 87%, 12%)
+}
+
+.light-gray-text-color {
+    color: hsl(0, 0%, 75%);
+}
+
+.white-text-color {
+    color: hsl(240, 75%, 98%);
+}
+
+ul.main {
+    display: flex;
+}
+
+ul.main li {
+    margin-right: 2rem;
+}
+
+ul.main li a {
+    color:  hsl(238, 22%, 44%);
+    text-decoration: none;
+}
+
+ul.main li:last-child {
+    margin-right: 0;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.bg-curve {
+    background-image: url('./../images/bg-curve-mobile.svg');
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.bg-gray {
+    background-color: hsl(240,75%,98.43%);
+}
+
+.bright-blue {
+    background-color: hsl(238, 22%, 44%);
+}
+
+.dark-blue {
+    background-color: hsl(243, 87%, 12%);
+}
+
+.white-logo {
+    filter: brightness(0) invert(1);
+}
+
+a.cyan {
+    color: hsl(170, 45%, 43%);
+}
+
+footer ul li a {
+    color: hsl(240, 75%, 98%);
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a span {
+    color: hsl(240, 75%, 98%);
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+.fa-facebook-f:before {
+    content: "\f39e";
+}
+.fa-brands {
+    font-family: "Font Awesome 6 Brands";
+}
+
+.icons {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-right: 0;
+    background: transparent;
+}
+
+.icons a {
+    height: 2rem;
+    width: 2rem;
+    border: 0.1rem solid  hsl(240, 75%, 98%);
+    border-radius: 50%;
+    color:  hsl(240, 75%, 98%);
+    position: relative;
+}
+
+.icons a i::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: inline-table;
+}
+
+input {
+    padding: .5rem 1rem;
+    border: 1px solid hsl(224, 93%, 58%);
+    min-width: 275px;
+    border-radius: 3px;
+}
+
+input:focus {
+    border: none;
+}
+
+input::placeholder {
+    color:lightgray
+}
+
+span#for-free-error, span#started-error {
+    visibility: hidden;
+}
+
+.bt-blue {
+    background-color: hsl(224, 93%, 58%);
+    color: hsl(240, 75%, 98%);
+    border-radius: 3px;
+    border: 0;
+    padding: .8rem 2rem;
+    font-size: 14px;
+    max-width: 275px;
+    max-height: 45px;
+}
+
+.card {
+    background-image: url('./../images/icon-quotes.svg');
+    background-repeat: no-repeat;
+    background-position: 15% 11%;
+    width: 50%;
+}
+
+.user picture {
+    width: 4rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.user p {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.user-desc {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+small {
+    font-size: 11px;
+}
+
+.py-7 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.px-7 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .bg-curve {
+        background-image: url('./../images/bg-curve-desktop.svg');
+    }
+
+    .card {
+        width: 50%;
+    }
+}
