@@ -25,12 +25,12 @@
     <article>
       <div class="container">
         <div class="row mt-5 mb-5">
-          <div class="col-6">
-            <picture>
+          <div class="col-4 col-lg-6 px-3">
+            <picture class="mt-3 logo">
               <img src="./images/logo.svg" alt="">
             </picture>
           </div>
-          <div class="col-6 d-flex align-items-end justify-content-end">
+          <div class="col-8 col-lg-6 d-flex align-items-end justify-content-end">
             <ul class="main">
               <li>
                 <a href="">Features</a>
@@ -44,10 +44,11 @@
             </ul>
           </div>
         </div>
-        <div class="row mb-5">
-          <div class="col-6">
-            <div class="main-container d-flex flex-column justify-content-center h-100">
-              <h2 class="dark-blue-text-color">All your files in one secure location, accessible anywhere.</h2>
+        
+        <div class="row mb-5 second">
+          <div class="col-12 col-lg-6">
+            <div class="main-container d-flex flex-column justify-content-center h-100 ps-2">
+              <h2 class="dark-blue-text-color my-5">All your files in one secure location, accessible anywhere.</h2>
               <p>Fylo stores your most important files in one secure location. 
                 Access them wherever you need, share and collaborate with friends, 
                 family, and co-workers.
@@ -57,18 +58,19 @@
                   <input id="started" type="text" placeholder="Enter your email"/>
                   <span id="started-error" class="dark-blue-text-color">Please check your email</span>
                 </div>
-                <button onclick="checkStartedValidEmail(event)" id="started" class="btn btn-primary bt-blue ms-4">Get Started</button>
+                <button onclick="checkStartedValidEmail(event)" id="started" class="btn btn-primary bt-blue ms-0 ms-lg-4">Get Started</button>
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <picture>
               <img src="./images/illustration-1.svg" alt="">
             </picture>
           </div>
         </div>
-        <div class="row bg-curve pt-5">
-          <div class="col-7 mt-5 bg-gray px-5 py-7 pb-5">
+        
+        <div class="row bg-curve pt-5 third">
+          <div class="col-12 col-lg-7 mt-5 bg-gray px-3 py-7 pb-5">
             <h2 class="dark-blue-text-color">Stay productive, wherever you are</h2>
             <p>
               Never let location be an issue when accessing your files. Fylo has you 
@@ -77,8 +79,8 @@
               Securely share files and folders with friends, family and colleagues for 
               live collaboration. No email attachments required!
             </p>
-            <a href="" class="cyan d-flex align-items-center mb-4 mt-4"> See how Fylo works<i class="ms-2"><picture><img src="./images/icon-arrow.svg" alt=""></picture></i></a>
-            <div class="card px-5 py-5 mt-4">
+            <a href="" class="cyan mb-4 mt-4"> See how Fylo works<i class="ms-2"><picture><img src="./images/icon-arrow.svg" alt=""></picture></i></a>
+            <div class="card px-5 py-5 mt-5 mx-3">
               <p> Fylo has improved our team productivity by an order of magnitude. Since 
                 making the switch our team has become a well-oiled collaboration machine.
               </p>
@@ -87,27 +89,28 @@
                   <img class="img-responsive rounded-circle" src="./images/avatar-testimonial.jpg" alt="">
                 </picture>
                 <div class="user-desc">
-                  <p class="name">Kyle Burton</p>
+                  <p class="name"><b>Kyle Burton</b></p>
                   <small class="name desc">Founder & CEO, Huddle</small>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-5 mt-5 bg-gray pb-5 py-7">
+          <div class="col-12 col-lg-5 mt-5 bg-gray pb-5 py-7">
             <picture>
               <img src="./images/illustration-2.svg" alt="">
             </picture>
           </div>
         </div>
+        
         <div class="row bright-blue white-text-color py-7 px-5">
-          <div class="col-6 px-7 py-5">
+          <div class="col-12 col-lg-6 px-0 py-0 px-lg-7 py-lg-5">
             <h3>Get early access today</h3>
             <p>
               It only takes a minute to sign up and our free starter tier is extremely generous. 
               If you have any questions, our support team would be happy to help you.
             </p>
           </div>
-          <div class="col-6 px-7 py-5">
+          <div class="col-12 col-lg-6 px-0 py-0 px-lg-7 py-lg-5">
             <div class="input-second d-flex flex-column">
               <input type="text" id="started-free" />
               <span id="for-free-error" class="white-text-color">Please check your email</span>
@@ -115,9 +118,10 @@
             </div>
           </div>
         </div>
+        
         <footer>
           <div class="row dark-blue py-7 px-5">
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
               <picture class="mb-3">
                 <img  class="white-logo" src="./images/logo.svg" alt="">
               </picture>
@@ -136,7 +140,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-4 d-flex justify-content-around">
+            <div class="col-12 col-lg-4 list">
               <ul>
                 <li>
                   <a href="">About Us</a>
@@ -163,7 +167,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-4 d-flex align-items-center justify-content-center">
+            <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center py-5">
               <div class="icons">
                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                 <a href=""><i class="fa-brands fa-twitter"></i></a>

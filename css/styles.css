@@ -3,9 +3,17 @@ body {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 171%;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    line-height: 110%;
+    text-align: center;
+
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 
 }
 
@@ -23,15 +31,18 @@ h2 {
 
 ul.main {
     display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 ul.main li {
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 ul.main li a {
     color:  hsl(238, 22%, 44%);
     text-decoration: none;
+    font-size: 18px;
 }
 
 ul.main li:last-child {
@@ -44,8 +55,9 @@ ul.main li:last-child {
 
 .bg-curve {
     background-image: url('./../images/bg-curve-mobile.svg');
-    background-position: center top;
+    background-position: 0 3.8%;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .bg-gray {
@@ -66,6 +78,9 @@ ul.main li:last-child {
 
 a.cyan {
     color: hsl(170, 45%, 43%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer ul li a {
@@ -83,6 +98,13 @@ footer a span {
 
 footer ul {
     padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+footer ul li a:hover {
+    color: hsl(240, 75%, 98%);
 }
 
 .fa-facebook-f:before {
@@ -96,7 +118,6 @@ footer ul {
     display: flex;
     gap: .5rem;
     justify-content: center;
-    margin-bottom: 2rem;
     margin-right: 0;
     background: transparent;
 }
@@ -144,21 +165,27 @@ span#for-free-error, span#started-error {
     color: hsl(240, 75%, 98%);
     border-radius: 3px;
     border: 0;
-    padding: .8rem 2rem;
+    padding: .8rem 4rem;
     font-size: 14px;
-    max-width: 275px;
+    max-width: none;
     max-height: 45px;
+    width: 100%;
 }
 
 .card {
     background-image: url('./../images/icon-quotes.svg');
     background-repeat: no-repeat;
-    background-position: 15% 11%;
-    width: 50%;
+    background-position: 45px 20px;
+    width: 95%;
+    border: none;
+}
+
+.card p {
+    font-size: 13px;
 }
 
 .user picture {
-    width: 4rem;
+    width: 2.5rem;
     height: auto;
     margin-right: 1rem;
 }
@@ -175,6 +202,10 @@ span#for-free-error, span#started-error {
     justify-content: center;
 }
 
+p.name {
+    font-size: 12px;
+}
+
 small {
     font-size: 11px;
 }
@@ -189,9 +220,36 @@ small {
     padding-right: 4rem;
 }
 
+.second {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.third {
+    margin-top: 12rem;
+}
+
+picture.logo {
+    width: 90%;
+}
+
+.input-data {
+    display: flex;
+    flex-direction: column;
+}
 
 
-@media (min-width: 768px) {
+
+@media (min-width: 992px) {
+
+    h2 {
+        font-size: 2.6rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        line-height: 150%;
+        text-align: left;
+    
+    }
 
     .bg-curve {
         background-image: url('./../images/bg-curve-desktop.svg');
@@ -200,4 +258,44 @@ small {
     .card {
         width: 50%;
     }
+
+    ul.main li {
+        margin-right: 3.5rem;
+    }
+
+    .second {
+        margin-top: 4.5rem;
+        flex-direction: initial;
+    }
+
+    .input-data {
+        display: flex;
+        flex-direction: initial;
+    }
+
+    .bt-blue {
+        background-color: hsl(224, 93%, 58%);
+        color: hsl(240, 75%, 98%);
+        border-radius: 3px;
+        border: 0;
+        padding: .8rem 2rem;
+        font-size: 14px;
+        max-width: 275px;
+        max-height: 45px;
+        width: auto;
+    }
+
+    footer .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    a.cyan {
+        justify-content: flex-start;
+    }
+
+
+
+    
 }
